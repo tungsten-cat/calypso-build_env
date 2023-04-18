@@ -33,6 +33,7 @@ RUN apt-get update && apt-get upgrade -y
 # Install needed packages to build cross compiler
 RUN apt-get install -y \
     build-essential bison flex texinfo wget nasm \
+    grub-pc-bin grub-common xorriso \
     libgmp3-dev libmpc-dev libmpfr-dev && \
     apt-get clean
 
